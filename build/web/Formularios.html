@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Criando Formulários</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" async="" src="./js/bootstrap.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="./cssPersonal/estilo.css"/>
+        
+    </head>
+    <body background='http://localhost:8080/PARCIAL/Imagens/bg_geral.jpg'>
+        <div align="middle"><h1>Primeiros passos para criar um formulário!</h1></div>
+        <hr>
+        <br>
+        
+        <br><font size="4">Para iniciarmos um formulário tens que saber o que você irá utilizar em um formulário
+        Exemplo: Nome, telefone, sexo, etc... são informações básicas de um formulário.
+        agora vamos aprender como se cria um formulário web.
+        primeiro passo vamos fazer um exemplo depois vamos colocar o código para que você também possa fazer.</font>
+        <hr>
+        
+        <form>
+            <br><b>Método Input</b>
+            <br>
+            <br>
+            <br><b>Insira seus dados</b>
+            <br>
+            <br>
+            Primeiro nome:
+            <input type="text" name="priemiroNome">
+            <br>
+            <br>
+            Último nome:
+            <input type="text" name="segundoNome">
+            <br>
+            <br><b>Código:</b>
+            <br>
+            <textarea disabled rows="7" cols="60">
+            Primeiro nome:
+            <input type="text" name="priemiroNome">
+            <br>
+            <br>
+            Último nome:
+            <input type="text" name="segundoNome">
+            </textarea>
+            <hr>
+            <br><b>Botões Radiais</b>
+            <br>
+            <br>Escolha o sexo
+            <br>
+            <br>
+            <input type="radio" name="sexo" value="masculino"> Masculino
+            <br>
+            <input type="radio" name="sexo" value="feminino"> Feminino
+            <br>
+            <br><b>Código:</b>
+            <br>
+            <textarea disabled rows="4" cols="85">
+            <input type="radio" name="sexo" value="masculino"> Masculino
+            <br>
+            <input type="radio" name="sexo" value="feminino"> Feminino
+            </textarea>
+            <br>
+            <hr>
+            <br><b>Caixas de Seleção</b>
+            <br>
+            <br>Marque a opção que deseja.
+            <br>
+            <br>
+            <input type="checkbox" name="HTML5"> Tutorial HTML 5
+            <input type="checkbox" name="php">Fuja do PHP
+            <input type="checkbox" name="java">Aprender java!
+            <input type="checkbox" name="delphi">Aprender Delphi
+            <input type="checkbox" name="c#">Aprender C#
+            <br>
+            <br><b>Código:</b>
+            <br>
+            <textarea disabled rows="6" cols="85">
+            <input type="checkbox" name="HTML5"> Tutorial HTML 5
+            <input type="checkbox" name="php">Fuja do PHP
+            <input type="checkbox" name="java">Aprender java!
+            <input type="checkbox" name="delphi">Aprender Delphi
+            <input type="checkbox" name="c#">Aprender C#                
+            </textarea>
+            <hr>
+        </form>
+        <!-- Precisa colocar uma pagina para receber os dados-->
+        <br><b>Adicionando Ação e botões no formulário</b>
+            <br>
+            <br>
+        <form name="input" action="html_form_action.asp" method="get">
+            Login:
+            <input type="text" name="usuario">
+            <br>
+            <br>
+            Senha:
+            <input type="text" name="senha">
+            <br>
+            <br>
+            <input type="submit" value="Logar">
+        </form>
+        <br>
+        <br><b>Código:</b>
+        <br>
+        <textarea disabled rows="9" cols="90">
+            <form name="input" action="html_form_action.asp" method="get">
+            Login:
+            <input type="text" name="usuario">
+            <br>
+            Senha:
+            <input type="text" name="senha">
+            <br>
+            <input type="submit" value="Logar">
+        </textarea>
+        <hr>
+        <br><b>Criando um botão simples</b>
+        <br>
+        <br>
+        <form>
+            <input type="button" value="BUTÃO">
+        </form>
+        <br><b>Código:</b>
+        <br><textarea disabled rows="4" cols="60">
+        <form>
+        <input type="button" value="BUTÃO">
+        </form>
+        </textarea>
+        <hr>
+            
+        <form>
+            <br><b>Caixa de seleção (Dropbox)</b>
+            <br>
+            <br>
+            <select name="linguagens">
+                <option value="HTML">HTML
+                <option value="PHP">PHP
+                <option value="JAVA">JAVA
+                <option value="C#">C#
+                <option value="DELPHI">DELPHI
+                <option value="ASCII">ASCII
+                <option value="DOTNET">DOTNET
+                <option value="C++">C++
+            </select>
+        </form>
+        <br><b>Código:</b>
+        <br>
+        <textarea disabled rows="11" cols="60">
+        <select name="linguagens">
+            <option value="HTML">HTML
+            <option value="PHP">PHP
+            <option value="JAVA">JAVA
+            <option value="C#">C#
+            <option value="DELPHI">DELPHI
+            <option value="ASCII">ASCII
+            <option value="DOTNET">DOTNET
+            <option value="C++">C++
+        </select>          
+        </textarea>
+        <hr>
+        <br><b>Inserir caixa de texto</b>
+        <br>
+        <br>
+        <br>
+        <textarea rows="10" cols="30">Esta é a caixa de texto!</textarea>
+        <br>
+        <br><b>Código:</b>
+        <br>
+        <textarea disabled rows="2" cols="75">
+        <textarea rows="10" cols="30">Esta é a caixa de texto!</textarea>
+        </textarea>
+        <hr>
+        <br>
+        <br><b>Inserir conjunto de dados dentro de uma caixa </b>
+        <br>
+        <br>
+        <fieldset style="width: 10%">
+            <legend>
+                Apenas responda
+            </legend>
+            <br>Altura <input type="text" size="5">
+            <br>Peso <input type="text" size="5">
+        </fieldset>
+        <br><b>Código:</b>
+        <br>
+        <textarea disabled rows="10" cols="70">
+        <fieldset style="width: 10%">
+            <legend>
+            Apenas responda
+            </legend>
+            <br>Altura <input type="text" size="5">
+            <br>Peso <input type="text" size="5">
+        </fieldset>
+        </textarea>
+        
+    </body>
+</html>

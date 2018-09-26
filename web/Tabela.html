@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Criando Tabelas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" async="" src="./js/bootstrap.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="./cssPersonal/estilo.css"/>
+    </head>
+    <body background='http://localhost:8080/PARCIAL/Imagens/bg_geral.jpg'>
+        <br><h1 align="middle">Criando tabelas</h1>
+        <hr>
+        <br>
+        <br>Passo-a-passo como criar uma tabela na página.
+        <br>
+        <br>
+        <table border="1">
+            <b>Tabela de Tags</b>
+            <th>TAG</th>
+            <th>Função</th>
+            <tr>
+                <td>< table ></td>
+                <td>Define que será desenhado uma tabela</td>
+            </tr>
+            <tr>
+                <td>< th ></td>
+                <td>Define nome para uma coluna</td>
+            </tr>
+            <tr>
+                <td>< tr ></td>
+                <td>Define o desenho da tabela</td>
+            </tr>
+            <tr>
+                <td>< td ></td>
+                <td>Define o conteudo daquela célula</td> 
+            </tr>
+            <tr>
+                <td>< /"tag" ></td>
+                <td>O sinal < / Fecha a tag desejada</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>Dentro da tag < table border="1"> define as bordas da tabela</td>
+            </tr>
+            <tr>
+                <td>< table disabled ></td>
+                <td>Disabled, desativa a caixa de de texto para q não modifiquem.</td>
+            </tr>
+            <tr>
+                <td>< td colspam="2" ></td>
+                <td>Define o numero (2) de colunas que farão a junção. </td>
+            </tr>
+            <tr>
+                <td>< td rowspam="2" ></td>
+                <td>Define o numero (2) de linhas que farão a junção.</tr>
+        </table>
+        <br>
+        <b>Tabela com Bordas</b>
+        <br>
+            <table border="1">
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <tr>
+                <td>Linha 1, Célula 1</td>
+                <td>Linha 2, Celula 1</td>
+            </tr>
+            
+            <tr>
+                <td>Linha 1, Célula 2</td>
+                <td>Linha 2, Célula 2</td>
+            </tr>
+        </table>
+        <br><b>Código da tabela:</b>
+        <br>
+        <textarea disabled rows="15" cols="80">        
+        <table border="1">
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+                <tr>
+                    <td>Linha 1, Célula 1</td>
+                    <td>Linha 2, Celula 1</td>
+                </tr>
+                <tr>
+                    <td>Linha 1, Célula 2</td>
+                    <td>Linha 2, Célula 2</td>
+                </tr>
+        </table>
+        </textarea>
+        <br>
+        <hr>
+        <br>
+        <br><b>Tabela sem bordas</b>
+        <table>
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <tr>
+                <td>Linha 1, Célula 1</td>
+                <td>Linha 2, Celula 1</td>
+            </tr>
+            <tr>
+                <td>Linha 1, Célula 2</td>
+                <td>Linha 2, Célula 2</td>
+            </tr>
+        </table>
+        <br><b>Código da tabela:</b>
+        <br>
+        <textarea disabled rows="13" cols="80" >
+        <table>    NOTA: Apenas foi removido o border="1" de dentro da tag.
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+                <tr>
+                    <td>Linha 1, Célula 1</td>
+                    <td>Linha 2, Celula 1</td>
+                </tr>
+                <tr>
+                    <td>Linha 1, Célula 2</td>
+                    <td>Linha 2, Célula 2</td>
+                </tr>
+        </table>
+        </textarea>
+        <hr>
+        <br><b>Tabela com célula vazia</b>
+        <br>
+        <table border="1">
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <tr>
+                <td>Linha 1, Célula 1</td>
+                <td>Linha 2, Celula 1</td>
+            </tr>
+            <tr>
+                <td>Linha 1, Célula 2</td>
+            </tr>
+        </table>
+        <br>
+        <textarea disabled rows="13" cols="80" >
+            <table border="1">
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                    <tr>
+                        <td>Linha 1, Célula 1</td>
+                        <td>Linha 2, Celula 1</td>
+                    </tr>
+                    <tr>
+                        <td>Linha 1, Célula 2</td>
+                        Aqui existia uma linha de comando lembra?
+                    </tr>
+            </table>        
+        </textarea>
+        <br>
+        <hr>
+        <br><b>Junção de Colunas</b>
+        <br>
+        <table border="1">
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <tr>
+                <td>Linha 1, Célula 1</td>
+                <td>Linha 2, Celula 1</td>
+            </tr>
+            <tr>
+                <td align="middle" colspan="2">Linha 1, Célula 2</td>
+            </tr>
+        </table>
+        <br>
+        <textarea disabled rows="12" cols="80">
+            <table border="1">
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                    <tr>
+                        <td>Linha 1, Célula 1</td>
+                        <td>Linha 2, Celula 1</td>
+                    </tr>
+                    <tr>
+                        <td align="middle" colspan="2">Linha 1, Célula 2</td>
+                    </tr>
+            </table>
+        </textarea>
+        <hr>
+        <br>
+        <br><b>Junção de Linha</b>
+        <table border="1">
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <tr>
+                <td>Linha 1, Célula 1</td>
+                <td rowspan="2">Linha 2, Coluna 2</td>
+            </tr>
+            <tr>
+                <td>Linha 1, Célula 2</td>
+                
+            </tr>
+        </table>
+        <br>
+        <textarea disabled rows="14" cols="80" >
+        <table border="1">
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <tr>
+                <td>Linha 1, Célula 1</td>
+                <td rowspan="2">Linha 2, Coluna 2</td>
+            </tr>
+            <tr>
+                <td>Linha 1, Célula 2</td>
+            </tr>
+        </table>
+</body>
+</html>

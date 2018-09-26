@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Inserir Imagens</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" async="" src="./js/bootstrap.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="./cssPersonal/estilo.css"/>
+    </head>
+     <body background='http://localhost:8080/PARCIAL/Imagens/bg_geral.jpg'>
+        
+        
+        <h1 align="center">Inserir Imagens</h1>
+        <hr>
+        <br>Para Inserir imagens em página podemos utilizar algumas formas,
+        <br>porém todas elas chegam ao mesmo resultado.
+        <br>Código para que isso aconteça:
+        <br><textarea disabled rows="1" cols="43"><src="pastaDaImagem/nomeDaImagem.formato"</textarea>
+        <br>
+        <br>e colocaremos um alt="" (para navegadores que não conseguirem abrir a imagem).
+        <br>No caso da imagem abaixo o código fica assim:
+        <br>
+        <br>
+        <textarea disabled rows="1" cols="60"><img src="image/must.jpg" alt="Imagem não disponível."/></textarea>
+        <br>
+        <br>
+        <img src="image/must.jpg" alt="Imagem nao disponivel"/>
+        <br>
+        <br>
+        <br> Porém notamos que a imagem esta grande e gostariamos de diminui-la, o processo para  que isso aconteça,
+        <br> é bem simples, basta apenas adicionar 
+        <br><textarea disabled rows="1" cols="55">width="Altura" height="Largura" dentro da tag < img></textarea>
+        <br>lembrando que a imagem é medida em pixels ficando desta forma:
+        <br>
+        <textarea disabled rows="1" cols="85"><img src="image/must.jpg" width="800" height="600" alt="Imagem não disponível."/></textarea>
+        <br>e o resultado:
+        <br>
+        <br>
+        <br>
+        <br><img src="image/must.jpg" width ="800" height="600" alt="Imagem não Disponível.">
+    </body>
+</html>
