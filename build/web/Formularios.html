@@ -1,156 +1,189 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>Criando Formulários</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" async="" src="./js/bootstrap.js"></script>
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="./cssPersonal/estilo.css"/>
-        
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <script>
+            function funcao1()
+            {
+                alert("Curioso");
+            }
+        </script>
+
+        <style>
+            body{               
+                padding-top: 200px;
+            }
+
+            @media (min-width: 768px) {
+                body {
+                    padding-top: 107px;
+                }
+            }
+        </style>
+
     </head>
-    <body background='http://localhost:8080/PARCIAL/Imagens/bg_geral.jpg'>
-        <div align="middle"><h1>Primeiros passos para criar um formulário!</h1></div>
-        <hr>
+    <body>
+        <!-- NAV BAR -->
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top"> 
+                <a href="./index.html" class="navbar-brand">Início</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Tabela.html" class="nav-link">Tabelas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Imagens.html" class="nav-link">Imagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Formularios.html" class="nav-link">Formulários</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- FIM NAV BAR -->
+        <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h1>Primeiros passos para criar um formulário!</h1>
+
+                    <p class="lead my-5"> 
+                        Para iniciarmos um formulário tens que saber o que você irá utilizar em um formulário
+                        Exemplo: Nome, telefone, sexo, etc... são informações básicas de um formulário.
+                        agora vamos aprender como se cria um formulário web.
+                        Vamos fazer um exemplo depois vamos colocar o código para que você também possa fazer.
+                    </p>
+                    <hr>                         
+                </div>      
+                <div class="col-2"></div>
+            </div> 
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <form>
+                        <h2>Campos Input</h2> </br>                       
+
+                        Primeiro nome:<input class="input-group input-group-text" type="text" name="priemiroNome">
+                        Último nome: <input class="input-group input-group-text" type="text" name="segundoNome">
+                    </form>
+
+                    <br><b>Código:</b>
+                    <br>
+                    <textarea  rows="7" cols="70">
+                Primeiro nome:
+                <input type="text" name="priemiroNome">
+                <br>
+                <br>
+                Último nome:
+                <input type="text" name="segundoNome">
+                    </textarea>        
+
+                    <h2 class="my-5">Botões Radiais </h2> 
+
+                    <input type="radio" class="" name="sexo" value="masculino"> Masculino
+                    <br>
+                    <input type="radio" name="sexo" value="feminino"> Feminino
+                    </br>
+                    </br>
+                    <b>Código:</b>
+                    <br>
+                    <textarea  rows="5" cols="70">
+        <input type="radio" name="sexo" value="masculino"> Masculino
         <br>
-        
-        <br><font size="4">Para iniciarmos um formulário tens que saber o que você irá utilizar em um formulário
-        Exemplo: Nome, telefone, sexo, etc... são informações básicas de um formulário.
-        agora vamos aprender como se cria um formulário web.
-        primeiro passo vamos fazer um exemplo depois vamos colocar o código para que você também possa fazer.</font>
-        <hr>
-        
-        <form>
-            <br><b>Método Input</b>
-            <br>
-            <br>
-            <br><b>Insira seus dados</b>
-            <br>
-            <br>
-            Primeiro nome:
-            <input type="text" name="priemiroNome">
-            <br>
-            <br>
-            Último nome:
-            <input type="text" name="segundoNome">
-            <br>
-            <br><b>Código:</b>
-            <br>
-            <textarea disabled rows="7" cols="60">
-            Primeiro nome:
-            <input type="text" name="priemiroNome">
-            <br>
-            <br>
-            Último nome:
-            <input type="text" name="segundoNome">
-            </textarea>
-            <hr>
-            <br><b>Botões Radiais</b>
-            <br>
-            <br>Escolha o sexo
-            <br>
-            <br>
-            <input type="radio" name="sexo" value="masculino"> Masculino
-            <br>
-            <input type="radio" name="sexo" value="feminino"> Feminino
-            <br>
-            <br><b>Código:</b>
-            <br>
-            <textarea disabled rows="4" cols="85">
-            <input type="radio" name="sexo" value="masculino"> Masculino
-            <br>
-            <input type="radio" name="sexo" value="feminino"> Feminino
-            </textarea>
-            <br>
-            <hr>
-            <br><b>Caixas de Seleção</b>
-            <br>
-            <br>Marque a opção que deseja.
-            <br>
-            <br>
-            <input type="checkbox" name="HTML5"> Tutorial HTML 5
-            <input type="checkbox" name="php">Fuja do PHP
-            <input type="checkbox" name="java">Aprender java!
-            <input type="checkbox" name="delphi">Aprender Delphi
-            <input type="checkbox" name="c#">Aprender C#
-            <br>
-            <br><b>Código:</b>
-            <br>
-            <textarea disabled rows="6" cols="85">
+        <input type="radio" name="sexo" value="feminino"> Feminino
+                    </textarea>
+
+                    <h2 class="my-5">Caixas de Seleção</h2>       
+                    Marque a opção que deseja.  <br>
+                    <input type="checkbox" name="HTML5" data-toggle>HTML 5 <br>
+                    <input type="checkbox" name="php">PHP?<br>
+                    <input type="checkbox" name="java">Java!<br>
+                    <input type="checkbox" name="delphi">Delphi<br>
+                    <input type="checkbox" name="c#">C#<br>
+
+                    <br><b>Código:</b><br>
+
+                    <textarea  rows="6" cols="70">
             <input type="checkbox" name="HTML5"> Tutorial HTML 5
             <input type="checkbox" name="php">Fuja do PHP
             <input type="checkbox" name="java">Aprender java!
             <input type="checkbox" name="delphi">Aprender Delphi
             <input type="checkbox" name="c#">Aprender C#                
-            </textarea>
-            <hr>
-        </form>
-        <!-- Precisa colocar uma pagina para receber os dados-->
-        <br><b>Adicionando Ação e botões no formulário</b>
-            <br>
-            <br>
-        <form name="input" action="html_form_action.asp" method="get">
-            Login:
-            <input type="text" name="usuario">
-            <br>
-            <br>
-            Senha:
-            <input type="text" name="senha">
-            <br>
-            <br>
-            <input type="submit" value="Logar">
-        </form>
-        <br>
-        <br><b>Código:</b>
-        <br>
-        <textarea disabled rows="9" cols="90">
-            <form name="input" action="html_form_action.asp" method="get">
+                    </textarea>
+
+                    <h2 class="my-5">Adicionando Ação e botões no formulário</h2>                   
+
+                    Login:
+                    <input class="input-group input-group-text" type="text" name="usuario">                        
+                    Senha:
+                    <input class="input-group input-group-text" type="text" name="senha">
+                    <br>
+                    <input class="btn-success btn-group-toggle" type="submit" onclick="funcao1()" value="Logar">
+
+                    <br>
+                    <br><b>Código:</b>
+                    <br>
+                    <textarea  rows="9" cols="70">
+             
             Login:
             <input type="text" name="usuario">
             <br>
             Senha:
             <input type="text" name="senha">
             <br>
-            <input type="submit" value="Logar">
-        </textarea>
-        <hr>
-        <br><b>Criando um botão simples</b>
-        <br>
-        <br>
-        <form>
-            <input type="button" value="BUTÃO">
-        </form>
-        <br><b>Código:</b>
-        <br><textarea disabled rows="4" cols="60">
-        <form>
-        <input type="button" value="BUTÃO">
-        </form>
-        </textarea>
-        <hr>
-            
-        <form>
-            <br><b>Caixa de seleção (Dropbox)</b>
-            <br>
-            <br>
-            <select name="linguagens">
-                <option value="HTML">HTML
-                <option value="PHP">PHP
-                <option value="JAVA">JAVA
-                <option value="C#">C#
-                <option value="DELPHI">DELPHI
-                <option value="ASCII">ASCII
-                <option value="DOTNET">DOTNET
-                <option value="C++">C++
-            </select>
-        </form>
-        <br><b>Código:</b>
-        <br>
-        <textarea disabled rows="11" cols="60">
+            <input type="submit" onclick="funcao1()" value="Logar">
+                            </textarea>
+
+                            <h2 class="my-5">Criando um botão simples</h2>                           
+                            <input type="button" value="BUTÃO" style="width: 150px" 
+                                   onclick="funcao1()" class="btn-danger btn-group-toggle">                          
+                            <br>
+                            <br>
+                            <b>Código:</b>
+                            <br>
+                            <textarea  rows="4" cols="70">
+                <form>
+                <input type="button" value="BUTÃO">
+                </form>
+                            </textarea>
+
+                            <h2 class="my-5">Caixa de seleção (Dropbox)</h2>
+
+
+                            <select name="linguagens" class="btn btn-secondary dropdown-toggle">
+                                <option value="HTML">HTML
+                                <option value="PHP">PHP
+                                <option value="JAVA">JAVA
+                                <option value="C#">C#
+                                <option value="DELPHI">DELPHI
+                                <option value="ASCII">ASCII
+                                <option value="DOTNET">DOTNET
+                                <option value="C++">C++
+                            </select>
+
+                            <br>
+                            <br><b>Código:</b><br>
+                            <textarea  rows="11" cols="70">
         <select name="linguagens">
             <option value="HTML">HTML
             <option value="PHP">PHP
@@ -161,42 +194,29 @@ and open the template in the editor.
             <option value="DOTNET">DOTNET
             <option value="C++">C++
         </select>          
-        </textarea>
-        <hr>
-        <br><b>Inserir caixa de texto</b>
-        <br>
-        <br>
-        <br>
-        <textarea rows="10" cols="30">Esta é a caixa de texto!</textarea>
-        <br>
-        <br><b>Código:</b>
-        <br>
-        <textarea disabled rows="2" cols="75">
-        <textarea rows="10" cols="30">Esta é a caixa de texto!</textarea>
-        </textarea>
-        <hr>
-        <br>
-        <br><b>Inserir conjunto de dados dentro de uma caixa </b>
-        <br>
-        <br>
-        <fieldset style="width: 10%">
-            <legend>
-                Apenas responda
-            </legend>
-            <br>Altura <input type="text" size="5">
-            <br>Peso <input type="text" size="5">
-        </fieldset>
-        <br><b>Código:</b>
-        <br>
-        <textarea disabled rows="10" cols="70">
-        <fieldset style="width: 10%">
-            <legend>
-            Apenas responda
-            </legend>
-            <br>Altura <input type="text" size="5">
-            <br>Peso <input type="text" size="5">
-        </fieldset>
-        </textarea>
-        
-    </body>
-</html>
+                            </textarea>
+
+                            <h2 class="my-5">Inserir caixa de texto</h2>                         
+                            <textarea rows="10" cols="70">Esta é a caixa de texto!</textarea>
+                            <br>
+                            <br><b>Código:</b>
+                            <br>
+                            <textarea rows="2" cols="70" style="margin-bottom: 100px">
+        <textarea rows="10" cols="30" >Esta é a caixa de texto!</textarea>                            
+
+                                </fieldset>
+                            </textarea>
+
+
+
+
+
+                            <!--fim da div col 6 -->
+                            </div>
+                            <div class="col-2"></div>    
+                            </div>
+                            </div>
+
+
+                            </body>
+                            </html>

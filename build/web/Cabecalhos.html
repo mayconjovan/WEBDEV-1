@@ -1,60 +1,129 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Modificar Cabeçalhos</title>
         <meta charset="UTF-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" async="" src="./js/bootstrap.js"></script>
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="./cssPersonal/estilo.css"/>
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            body{               
+                padding-top: 200px;
+            }
+
+            @media (min-width: 768px) {
+                body {
+                    padding-top: 107px;
+                }
+            }
+
+        </style>
+
     </head>
-    <body background='http://localhost:8080/PARCIAL/Imagens/bg_geral.jpg'>
-        <h1 align="center">Alterando o tamanho do cabeçalho.</h1>
-        <hr>
-        <br><font size="5"> Para mudar o tamanho da fonte de um cabeçalho utilizamos as seguintes tags.</font>
-        <br>
-        <font size="7">< h1>  Até < h6></font>
-        <br>
-        <font size="5">Lembrando que quanto maior o numero depois do "h" menor sera o tamanho</font>
-        
-        <br><font size="5"> Ficando então desta Forma:</font>
-        <br>       
-        <textarea disabled rows="12" cols="40">
-        <h1>Cabeçalho aqui!</h1>
-        
-        <h2>Cabeçalho Aqui!</h2>
-        
-        <h3>Cabeçalho Aqui!</h3>
-        
-        <h4>Cabeçalho Aqui!</h4>
-        
-        <h5>Cabeçalho Aqui!</h5>
-        
-        <h6>Cabeçalho Aqui!</h6>
-        </textarea>
-        <br>       
-        <br>
-        <font size="5">Resultado:</font>
-        
-            <h1>Cabeçalho aqui!</h1>
-            <br>
-            <h2>Cabeçalho Aqui!</h2>
-            <br>
-            <h3>Cabeçalho Aqui!</h3>
-            <br>
-            <h4>Cabeçalho Aqui!</h4>
-            <br>
-            <h5>Cabeçalho Aqui!</h5>
-            <br>
-            <h6>Cabeçalho Aqui!</h6>
-        
-        
-        
-        
+    <body>
+        <!-- NAV BAR -->
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top"> 
+                <a href="./index.html" class="navbar-brand">Início</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Tabela.html" class="nav-link">Tabelas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Imagens.html" class="nav-link">Imagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Formularios.html" class="nav-link">Formulários</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- FIM NAV BAR -->.
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" >
+                    <h1 class="display-4">Alterando o tamanho do cabeçalho.</h1>
+                </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-2"></div>
+                <div class="col-8 text-center">
+                    <h2>
+                        Para mudar o tamanho da fonte de um cabeçalho utilizamos 
+                        as seguintes tags.
+                    </h2>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row my-5">
+                <div class="col-2"></div>
+                <div class="col-8 text-center">
+                    <h2>
+                        < h1 >  Até < h6 >
+                    </h2>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-3"></div>
+                <div class="col-6 text-center">
+                    <h2 style="color: red">
+                        Lembrando que quanto maior o número depois do "h" menor sera o tamanho!
+                    </h2>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row my-5">
+                <div class="col-2"></div>
+                <div class="col-8 text-center">
+                    <h2 style="color: blue">
+                        Aqui temos exemplos
+                    </h2>
+                    <p>
+                        </br>
+                        < h1>Cabeçalho < h1> aqui!</ h1> </br>       
+                        < h2>Cabeçalho < h2> Aqui!</ h2> </br>   
+                        < h3>Cabeçalho < h3> Aqui!</ h3> </br>   
+                        < h4>Cabeçalho < h4> Aqui!</ h4> </br>    
+                        < h5>Cabeçalho < h5> Aqui!</ h5> </br>
+                        < h6>Cabeçalho < h6> Aqui!</ h6>                
+                    </p>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row my-5">
+                <div class="col-2"></div>
+                <div class="col-8 text-center">
+                    <h2 style="color: blue">
+                        Aqui temos o resultado
+                    </h2>                                            
+                    <h1>Cabeçalho < h1> aqui!</h1>        
+                    <h2>Cabeçalho < h2> Aqui!</h2>        
+                    <h3>Cabeçalho < h3> Aqui!</h3>        
+                    <h4>Cabeçalho < h4> Aqui!</h4>         
+                    <h5>Cabeçalho < h5> Aqui!</h5>
+                    <h6>Cabeçalho < h6> Aqui!</h6>                    
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
     </body>
 </html>

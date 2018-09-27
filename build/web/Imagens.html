@@ -1,48 +1,98 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>Inserir Imagens</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" async="" src="./js/bootstrap.js"></script>
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="./cssPersonal/estilo.css"/>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+        <style>
+            body{               
+                padding-top: 200px;
+            }
+
+            @media (min-width: 768px) {
+                body {
+                    padding-top: 107px;
+                }
+            }
+
+        </style>
+
     </head>
-     <body background='http://localhost:8080/PARCIAL/Imagens/bg_geral.jpg'>
-        
-        
-        <h1 align="center">Inserir Imagens</h1>
-        <hr>
-        <br>Para Inserir imagens em página podemos utilizar algumas formas,
-        <br>porém todas elas chegam ao mesmo resultado.
-        <br>Código para que isso aconteça:
-        <br><textarea disabled rows="1" cols="43"><src="pastaDaImagem/nomeDaImagem.formato"</textarea>
-        <br>
-        <br>e colocaremos um alt="" (para navegadores que não conseguirem abrir a imagem).
-        <br>No caso da imagem abaixo o código fica assim:
-        <br>
-        <br>
-        <textarea disabled rows="1" cols="60"><img src="image/must.jpg" alt="Imagem não disponível."/></textarea>
-        <br>
-        <br>
-        <img src="image/must.jpg" alt="Imagem nao disponivel"/>
-        <br>
-        <br>
-        <br> Porém notamos que a imagem esta grande e gostariamos de diminui-la, o processo para  que isso aconteça,
-        <br> é bem simples, basta apenas adicionar 
-        <br><textarea disabled rows="1" cols="55">width="Altura" height="Largura" dentro da tag < img></textarea>
-        <br>lembrando que a imagem é medida em pixels ficando desta forma:
-        <br>
-        <textarea disabled rows="1" cols="85"><img src="image/must.jpg" width="800" height="600" alt="Imagem não disponível."/></textarea>
-        <br>e o resultado:
-        <br>
-        <br>
-        <br>
-        <br><img src="image/must.jpg" width ="800" height="600" alt="Imagem não Disponível.">
+    <body>
+        <!-- NAV BAR -->
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top"> 
+                <a href="./index.html" class="navbar-brand">Início</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Tabela.html" class="nav-link">Tabelas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Imagens.html" class="nav-link">Imagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Formularios.html" class="nav-link">Formulários</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- FIM NAV BAR -->
+        <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h1 class="text-center">Inserir Imagens</h1>
+                    <p class="lead" >
+                        Para Inserir imagens em página podemos utilizar algumas formas,
+                        porém todas elas chegam ao mesmo resultado.
+                    </p>
+                    <p class="lead">                        
+                        Código para que isso aconteça:
+                    </p>
+
+
+                    <h4 style="color: blue">                        
+                        src="pastaDaImagem/nomeDaImagem.formato"
+                    </h4>
+
+                    <p class="lead">
+                        também deve-se colocar um alt="" (para navegadores que não conseguirem abrir a imagem).
+
+                    </p>
+                    <p class="lead">
+                        No caso da imagem abaixo o código fica assim:
+                    </p>
+
+                    <p class="lead" style="color: blue">                        
+                        < img src="image/must.jpg" alt="Foto de um mustang."/>                        
+                    </p>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <img src="image/must.jpg" alt="Foto de um mustang" style="width: 100%"/>                   
+                </div>
+            </div>       
+        </div>        
     </body>
 </html>

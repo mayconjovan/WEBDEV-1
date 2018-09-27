@@ -6,43 +6,103 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
-        <link href="./css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+       
+        <style>
+            body{               
+                padding-top: 200px;
+            }
+
+            @media (min-width: 768px) {
+                body {
+                    padding-top: 107px;
+                }
+            }
+
+        </style>
+
     </head>
-
-
     <body>
-        
         <!-- NAV BAR -->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
-            <a href="" class="navbar-brand">Home</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./Tabela.html" class="nav-link">Tabelas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./Imagens.html" class="nav-link">Imagens</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./Formularios.html" class="nav-link">Formulários</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="fixed-top">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top"> 
+                <a href="./index.html" class="navbar-brand">Início</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Tabela.html" class="nav-link">Tabelas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Imagens.html" class="nav-link">Imagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Formularios.html" class="nav-link">Formulários</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <!-- FIM NAV BAR -->
-        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-7">
+
+                    <div id="carouselHome" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image/Carousel/HTML_Logo.png" class="img-fluid d-block">
+                            </div>
+                            <div class="carousel-item" >
+                                <img src="image/Carousel/css3.png" class="img-fluid d-block">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/Carousel/jquery.png" style="width: 70% " class="img-fluid d-block">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/Carousel/js3.png" class="img-fluid d-block">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/Carousel/bootstrap4.png" class="img-fluid d-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="color: black">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselHome" data-slide-to="1" class="active"></li>
+                    <li data-target="#carouselHome" data-slide-to="2" class="active"></li>
+                    <li data-target="#carouselHome" data-slide-to="3" class="active"></li>
+                    <li data-target="#carouselHome" data-slide-to="4" class="active"></li>
+                </ol>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Próxima</span>
+            </a>
+            <div class="col-md-2"></div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"  crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"  crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
