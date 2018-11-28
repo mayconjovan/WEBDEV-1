@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Criando Formulários</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" async="" src="./js/bootstrap.js"></script>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <script>
-            function funcao1()
-            {
-                alert("Curioso");
-            }
-        </script>
 
-        <style>
-            body{               
+<head>
+    <title>Criando Formulários</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" async="" src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script>
+        function funcao1() {
+            alert("Curioso");
+        }
+    </script>
+
+    <style>
+        body{               
                 padding-top: 200px;
             }
 
@@ -27,103 +27,104 @@
             }
         </style>
 
-    </head>
-    <body>
-        <!-- NAV BAR -->
-        <div class="fixed-top">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top"> 
-                <a href="./index.html" class="navbar-brand">Início</a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Tabela.html" class="nav-link">Tabelas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Imagens.html" class="nav-link">Imagens</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Formularios.html" class="nav-link">Formulários</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top">
+            <a href="./index.html" class="navbar-brand">Início</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Tabela.html" class="nav-link">Tabelas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Imagens.html" class="nav-link">Imagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Formularios.html" class="nav-link">Formulários</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- FIM NAV BAR -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1>Primeiros passos para criar um formulário!</h1>
+
+                <p class="lead my-5">
+                    Para iniciarmos um formulário tens que saber o que você irá utilizar em um formulário
+                    Exemplo: Nome, telefone, sexo, etc... são informações básicas de um formulário.
+                    agora vamos aprender como se cria um formulário web.
+                    Vamos fazer um exemplo depois vamos colocar o código para que você também possa fazer.
+                </p>
+                <hr>
+            </div>
+            <div class="col-2"></div>
         </div>
-        <!-- FIM NAV BAR -->
-        <div class="container">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <h1>Primeiros passos para criar um formulário!</h1>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <form>
+                    <h2>Campos Input</h2> <br>
 
-                    <p class="lead my-5"> 
-                        Para iniciarmos um formulário tens que saber o que você irá utilizar em um formulário
-                        Exemplo: Nome, telefone, sexo, etc... são informações básicas de um formulário.
-                        agora vamos aprender como se cria um formulário web.
-                        Vamos fazer um exemplo depois vamos colocar o código para que você também possa fazer.
-                    </p>
-                    <hr>                         
-                </div>      
-                <div class="col-2"></div>
-            </div> 
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <form>
-                        <h2>Campos Input</h2> <br>                       
+                    Primeiro nome:<input class="input-group input-group-text" type="text" name="priemiroNome">
+                    Último nome: <input class="input-group input-group-text" type="text" name="segundoNome">
+                </form>
 
-                        Primeiro nome:<input class="input-group input-group-text" type="text" name="priemiroNome">
-                        Último nome: <input class="input-group input-group-text" type="text" name="segundoNome">
-                    </form>
-
-                    <br><b>Código:</b>
-                    <br>
-                    <textarea  rows="7" cols="70">
+                <br><b>Código:</b>
+                <br>
+                <textarea rows="7" cols="70">
                 Primeiro nome:
                 <input type="text" name="priemiroNome">
                 <br>
                 <br>
                 Último nome:
                 <input type="text" name="segundoNome">
-                    </textarea>        
+                    </textarea>
 
-                    <h2 class="my-5">Botões Radiais </h2> 
+                <h2 class="my-5">Botões Radiais </h2>
 
-                    <input type="radio" class="" name="sexo" value="masculino"> Masculino
-                    <br>
-                    <input type="radio" name="sexo" value="feminino"> Feminino
-                    <br>
-                    <br>
-                    <b>Código:</b>
-                    <br>
-                    <textarea  rows="5" cols="70">
+                <input type="radio" class="" name="sexo" value="masculino"> Masculino
+                <br>
+                <input type="radio" name="sexo" value="feminino"> Feminino
+                <br>
+                <br>
+                <b>Código:</b>
+                <br>
+                <textarea rows="5" cols="70">
         <input type="radio" name="sexo" value="masculino"> Masculino
         <br>
         <input type="radio" name="sexo" value="feminino"> Feminino
                     </textarea>
 
-                    <h2 class="my-5">Caixas de Seleção</h2>       
-                    Marque a opção que deseja.  <br>
-                    <input type="checkbox" name="HTML5" data-toggle>HTML 5 <br>
-                    <input type="checkbox" name="php">PHP?<br>
-                    <input type="checkbox" name="java">Java!<br>
-                    <input type="checkbox" name="delphi">Delphi<br>
-                    <input type="checkbox" name="c#">C#<br>
+                <h2 class="my-5">Caixas de Seleção</h2>
+                Marque a opção que deseja. <br>
+                <input type="checkbox" name="HTML5" data-toggle>HTML 5 <br>
+                <input type="checkbox" name="php">PHP?<br>
+                <input type="checkbox" name="java">Java!<br>
+                <input type="checkbox" name="delphi">Delphi<br>
+                <input type="checkbox" name="c#">C#<br>
 
-                    <br><b>Código:</b><br>
+                <br><b>Código:</b><br>
 
-                    <textarea  rows="6" cols="70">
+                <textarea rows="6" cols="70">
             <input type="checkbox" name="HTML5"> Tutorial HTML 5
             <input type="checkbox" name="php">Fuja do PHP
             <input type="checkbox" name="java">Aprender java!
@@ -131,20 +132,20 @@
             <input type="checkbox" name="c#">Aprender C#                
                     </textarea>
 
-                    <h2 class="my-5">Adicionando Ação e botões no formulário</h2>                   
+                <h2 class="my-5">Adicionando Ação e botões no formulário</h2>
 
-                    Login:
-                    <input class="input-group input-group-text" type="text" name="usuario">                        
-                    Senha:
-                    <input class="input-group input-group-text" type="password" name="senha">
-                    <br>
-                    <input class="btn-success btn-group-toggle" type="submit" onclick="funcao1()" value="Logar">
+                Login:
+                <input class="input-group input-group-text" type="text" name="usuario">
+                Senha:
+                <input class="input-group input-group-text" type="password" name="senha">
+                <br>
+                <input class="btn-success btn-group-toggle" type="submit" onclick="funcao1()" value="Logar">
 
-                    <br>
-                    <br><b>Código:</b>
-                    <br>
-                    <textarea  rows="9" cols="70">
-             
+                <br>
+                <br><b>Código:</b>
+                <br>
+                <textarea rows="9" cols="70">
+
             Login:
             <input type="text" name="usuario">
             <br>
@@ -154,36 +155,35 @@
             <input type="submit" onclick="funcao1()" value="Logar">
                     </textarea>
 
-                    <h2 class="my-5">Criando um botão simples</h2>                           
-                    <input type="button" value="BUTÃO" style="width: 150px" 
-                           onclick="funcao1()" class="btn-danger btn-group-toggle">                          
-                    <br>
-                    <br>
-                    <b>Código:</b>
-                    <br>
-                    <textarea  rows="4" cols="70">
+                <h2 class="my-5">Criando um botão simples</h2>
+                <input type="button" value="BUTÃO" style="width: 150px" onclick="funcao1()" class="btn-danger btn-group-toggle">
+                <br>
+                <br>
+                <b>Código:</b>
+                <br>
+                <textarea rows="4" cols="70">
                 <form>
                 <input type="button" value="BUTÃO">
                 </form>
                     </textarea>
 
-                    <h2 class="my-5">Caixa de seleção (Dropbox)</h2>
+                <h2 class="my-5">Caixa de seleção (Dropbox)</h2>
 
 
-                    <select name="linguagens" class="btn btn-secondary dropdown-toggle">
-                        <option value="HTML">HTML
-                        <option value="PHP">PHP
-                        <option value="JAVA">JAVA
-                        <option value="C#">C#
-                        <option value="DELPHI">DELPHI
-                        <option value="ASCII">ASCII
-                        <option value="DOTNET">DOTNET
-                        <option value="C++">C++
-                    </select>
+                <select name="linguagens" class="btn btn-secondary dropdown-toggle">
+                    <option value="HTML">HTML
+                    <option value="PHP">PHP
+                    <option value="JAVA">JAVA
+                    <option value="C#">C#
+                    <option value="DELPHI">DELPHI
+                    <option value="ASCII">ASCII
+                    <option value="DOTNET">DOTNET
+                    <option value="C++">C++
+                </select>
 
-                    <br>
-                    <br><b>Código:</b><br>
-                    <textarea  rows="11" cols="70">
+                <br>
+                <br><b>Código:</b><br>
+                <textarea rows="11" cols="70">
         <select name="linguagens">
             <option value="HTML">HTML
             <option value="PHP">PHP
@@ -196,17 +196,18 @@
         </select>          
                     </textarea>
 
-                    <h2 class="my-5">Inserir caixa de texto</h2>                         
-                    <textarea rows="10" cols="70">Esta é a caixa de texto!</textarea>
-                    <br>
-                    <br><b>Código:</b>
-                    <br>
-                    <textarea rows="2" cols="70" style="margin-bottom: 100px">
-        <textarea rows="10" cols="30" >Esta é a caixa de texto!</textarea>                            
+                <h2 class="my-5">Inserir caixa de texto</h2>
+                <textarea rows="10" cols="70">Esta é a caixa de texto!</textarea>
+                <br>
+                <br><b>Código:</b>
+                <br>
+                <textarea rows="2" cols="70" style="margin-bottom: 100px">
+        <textarea rows="10" cols="30" >Esta é a caixa de texto!</textarea>
 
-                </div>
-                <div class="col-2"></div>    
             </div>
+            <div class="col-2"></div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
