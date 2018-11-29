@@ -1,2 +1,3 @@
-#https://mayconjovan.github.io/WEBDEV-1/index.html
+#https://mayconjovan.github.io/WEBDEV-1/
+
 Repositório usado para as aulas de WEB 1.
