@@ -42,7 +42,7 @@ function novaRespostaTexto() {
 
       id++;
       opcao++;
-   } 
+   }
 }
 
 function novoCheckbox() {
@@ -62,7 +62,6 @@ function novoCheckbox() {
 
       opcao++;
    }
-
 }
 
 function novaRadio() {
@@ -115,6 +114,7 @@ function deletaTodosElementos() {
    opcao = 1;
    id = 0;
    carregarTudo();
+   limparMemoria();
 }
 
 function salvarPagina() {
@@ -123,8 +123,7 @@ function salvarPagina() {
    localStorage.setItem("html", refVal);
    for (var i = 0; i < id; i++) {
       var x = document.getElementById(i).value;
-      var y = document.getElementById(i).getAttribute("value");      
-
+      
       localStorage.setItem(i, x);
    }
 }
@@ -134,44 +133,37 @@ function atualizaTitulo() {
    localStorage.setItem("x", x);
 }
 
-function atualizaDados() {
-   var x = document.getElementById(id).value;
-   localStorage.setItem(id, x);
-}
-
-function atualizaRadio() {
-
-   var x = document.getElementById(id).value;
-   localStorage.setItem(id, x);
-}
-
-function atualizaCheck() {
-   var x = document.getElementById("tituloform").value;
-   localStorage.setItem("x", x);
-}
-
 function retornaDados() {
-   var u = localStorage.length;
+   var u = localStorage.length - 2;
    var valorTemp = localStorage.getItem("html");
    var x = localStorage.getItem('x');
 
    document.getElementById('drop1').innerHTML = valorTemp;
    document.getElementById('tituloform').value = x;
-
-   for (var i = 0; i < u; i++) {      
+   if (localStorage.length != null){
+   for (var i = 0; i < u; i++) {
       var w = i;
       var y = localStorage.getItem(w);
+
       document.getElementById(w).value = y;
    }
-
-   localStorage.clear();
+   }else {
+      alert("Não é possivel remover mais nada!");
+   }  
 }
 
-function autoResize()
-    {
-        objTextArea = document.getElementsByTagName('textarea');
-        while (objTextArea.scrollHeight > objTextArea.offsetHeight)
-        {
-            objTextArea.rows += 1;
-        }
-    }
+
+function limparMemoria() {
+   localStorage.clear();
+   sessionStorage.clear();
+   while (ul.firstChild) {
+      ul.removeChild(ul.firstChild);
+   }
+}
+
+function autoResize() {
+   objTextArea = document.getElementsByTagName('textarea');
+   while (objTextArea.scrollHeight > objTextArea.offsetHeight) {
+      objTextArea.rows += 1;
+   }
+}

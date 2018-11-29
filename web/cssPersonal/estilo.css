@@ -11,7 +11,7 @@ body {
 
 @media (min-width: 768px) {
     body {
-        padding-top: 10px;
+        padding-top: 107px;
     }
 }
 
@@ -25,7 +25,8 @@ textarea {
     resize: none;
     height: auto;
     display: flex;
-    outline: none;        
+    outline: none;
+    overflow: hidden;     
 }
 
 #drop1 {
