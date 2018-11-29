@@ -56,7 +56,7 @@ function novoCheckbox() {
          `<div class="op"><input type="checkbox" id="${id}" ></div> `);
       id++;
       d1.insertAdjacentHTML('beforeend',
-         `<div><input type="text" id="${id}" value=" Opção ${opcao}"></div>
+         `<div><input type="text" style="width: 90%" id="${id}" value=" Opção ${opcao}"></div>
                      `);
       id++;
 
