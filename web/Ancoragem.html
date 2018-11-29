@@ -1,202 +1,213 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-        <link rel="stylesheet" href="style.css" type="text/css"/>
-        <title>Ancoragem</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="./cssPersonal/estilo.css"/>
-        <style>
-            body{               
-                padding-top: 200px;
+<head>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Ancoragem</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./cssPersonal/estilo.css" />
+    <style>
+        body {
+            padding-top: 200px;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding-top: 107px;
             }
+        }
+    </style>
 
-            @media (min-width: 768px) {
-                body {
-                    padding-top: 107px;
-                }
-            }
+</head>
 
-        </style>
-
-    </head>
-    <body>
-        <!-- NAV BAR -->
-        <div class="fixed-top">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top"> 
-                <a href="./index.html" class="navbar-brand">Início</a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Tabela.html" class="nav-link">Tabelas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Imagens.html" class="nav-link">Imagens</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Formularios.html" class="nav-link">Formulários</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!-- FIM NAV BAR -->
-        <div class="container">
-            <div class="row">
-                <div class="col-2"></div>    
-                <div class="col-8">
-                    <h1 class="text-center" id="titulo">Ancoragem</h1><br>
-                    <p class="lead">
-                        Básicamente a ancoragem funciona da seguinte maneira. Digamos que temos uma página muito grande cheio de textos
-                        imagens, etc. onde a barra de rolagem se torna enorme ou a localização é muito dificil, utilizamos a ancoragem.
-                        Exmplo: Temos algum assunto relacionado a algo que é de nosso interesse porém a página é muito cumprida,
-                        ancoragem serve como se fosse um "link" dentro da pagina que leva pra alguma posição especifica.
-                    </p>
-                </div>    
-                <div class="col-2"></div>    
+<body>
+    <!-- NAV BAR -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top">
+            <a href="./index.html" class="navbar-brand">Início</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Tabela.html" class="nav-link">Tabelas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Imagens.html" class="nav-link">Imagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Formularios.html" class="nav-link">Formulários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Aulas.html" class="nav-link">Aulas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./FormularioDD.html" class="nav-link">FormularioDD</a>
+                    </li>
+                </ul>
             </div>
-            <div class="container">                
-                <div class="row mb-5">
-                    <div class="col-3">
-                        <nav id="navbarVertical" class="navbar navbar-light bg-light">
+        </nav>
+    </div>
+    <!--Fim nav Bar-->
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1 class="text-center" id="titulo">Ancoragem</h1><br>
+                <p class="lead">
+                    Básicamente a ancoragem funciona da seguinte maneira. Digamos que temos uma página muito grande
+                    cheio de textos
+                    imagens, etc. onde a barra de rolagem se torna enorme ou a localização é muito dificil, utilizamos
+                    a ancoragem.
+                    Exmplo: Temos algum assunto relacionado a algo que é de nosso interesse porém a página é muito
+                    cumprida,
+                    ancoragem serve como se fosse um "link" dentro da pagina que leva pra alguma posição especifica.
+                </p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-3">
+                    <nav id="navbarVertical" class="navbar navbar-light bg-light">
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item1">Lorem ipsum</a>
                             <nav class="nav nav-pills flex-column">
-                                <a class="nav-link" href="#item1">Lorem ipsum</a>
-                                <nav class="nav nav-pills flex-column">
-                                    <a class="nav-link ml-3" href="#item1-1">Nunc venenatis</a>
-                                    <a class="nav-link ml-3" href="#item1-2">Pellentesque</a>
-                                </nav>
-                                <a class="nav-link my-2" href="#item2">Etiam volutpat</a>
-                                <a class="nav-link my-2" href="#item3">Nulla ante diam</a>
-                                <nav class="nav nav-pills flex-column">
-                                    <a class="nav-link ml-3" href="#item3-1">Nunc venenatis</a>
-                                    <a class="nav-link ml-3" href="#item3-2">Pellentesque</a>
-                                </nav>
-                                <a class="nav-link my-2" href="#item4">Suspendisse eget</a>
+                                <a class="nav-link ml-3" href="#item1-1">Nunc venenatis</a>
+                                <a class="nav-link ml-3" href="#item1-2">Pellentesque</a>
                             </nav>
+                            <a class="nav-link my-2" href="#item2">Etiam volutpat</a>
+                            <a class="nav-link my-2" href="#item3">Nulla ante diam</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ml-3" href="#item3-1">Nunc venenatis</a>
+                                <a class="nav-link ml-3" href="#item3-2">Pellentesque</a>
+                            </nav>
+                            <a class="nav-link my-2" href="#item4">Suspendisse eget</a>
                         </nav>
-                    </div>
-                    <div class="col-9">
-                        <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
-                            <h4 id="item1">Lorem ipsum dolor</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Cras vulputate, ante et tincidunt faucibus, quam sapien 
-                                venenatis turpis, ac commodo sapien justo eu lectus. 
-                                Curabitur vulputate pellentesque libero, laoreet aliquam 
-                                metus fermentum ut. Nullam vitae euismod libero. Aliquam
-                                erat volutpat. Vestibulum rutrum metus sed neque porta 
-                                maximus. Praesent fermentum leo laoreet odio finibus, 
-                                in finibus eros dapibus. Quisque elementum finibus metus.
-                                Aenean fermentum ex eu lectus condimentum varius. 
-                                Praesent ut bibendum felis. Nam sit amet erat vel 
-                                nibh varius eleifend. Morbi non consectetur ligula. 
-                                Nulla in neque leo.</p>
+                    </nav>
+                </div>
+                <div class="col-9">
+                    <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+                        <h4 id="item1">Lorem ipsum dolor</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Cras vulputate, ante et tincidunt faucibus, quam sapien
+                            venenatis turpis, ac commodo sapien justo eu lectus.
+                            Curabitur vulputate pellentesque libero, laoreet aliquam
+                            metus fermentum ut. Nullam vitae euismod libero. Aliquam
+                            erat volutpat. Vestibulum rutrum metus sed neque porta
+                            maximus. Praesent fermentum leo laoreet odio finibus,
+                            in finibus eros dapibus. Quisque elementum finibus metus.
+                            Aenean fermentum ex eu lectus condimentum varius.
+                            Praesent ut bibendum felis. Nam sit amet erat vel
+                            nibh varius eleifend. Morbi non consectetur ligula.
+                            Nulla in neque leo.</p>
 
-                            <h5 id="item1-1">Nunc venenatis est</h5>
-                            <p>Nunc venenatis est ac quam elementum, dignissim malesuada
-                                nulla tempor. Nullam leo velit, iaculis vel nulla eleifend,
-                                ultricies lobortis ipsum. Nulla interdum laoreet lacus sed 
-                                sodales. Curabitur feugiat enim tortor, in suscipit nisi
-                                eleifend ut. Ut convallis metus neque, nec imperdiet 
-                                mauris fermentum quis. Mauris ac scelerisque dolor. </p>
+                        <h5 id="item1-1">Nunc venenatis est</h5>
+                        <p>Nunc venenatis est ac quam elementum, dignissim malesuada
+                            nulla tempor. Nullam leo velit, iaculis vel nulla eleifend,
+                            ultricies lobortis ipsum. Nulla interdum laoreet lacus sed
+                            sodales. Curabitur feugiat enim tortor, in suscipit nisi
+                            eleifend ut. Ut convallis metus neque, nec imperdiet
+                            mauris fermentum quis. Mauris ac scelerisque dolor. </p>
 
-                            <h5 id="item1-2">Pellentesque ut efficitur eros</h5>
-                            <p>
-                                Cras lobortis purus magna, ac porta erat elementum in.
-                                Proin a metus augue. Vestibulum metus velit, rutrum eget
-                                luctus in, tempor in erat. Vestibulum ullamcorper nunc 
-                                sit amet tempor blandit. Duis eget viverra nisl. Etiam 
-                                luctus tempor urna sed fringilla. Vestibulum efficitur 
-                                nibh et posuere ultrices.
-                            </p>
-                            <h4 id="item2">Etiam volutpat</h4>
-                            <p>
-                                Etiam volutpat nulla lorem, vitae sollicitudin felis 
-                                accumsan sit amet. Sed euismod, nisi ut feugiat auctor,
-                                dui purus egestas sem, vel interdum erat lorem sed massa. 
-                                Nunc posuere aliquet lacus nec posuere. Donec ut nisi eget
-                                urna hendrerit ullamcorper et nec tellus. Curabitur porta 
-                                tristique velit non varius. Vivamus magna neque, vulputate 
-                                ut condimentum in, venenatis id purus. Duis sem urna, imperdiet
-                                sed nisi vitae, volutpat luctus lorem. Nunc varius posuere 
-                                scelerisque. Vivamus elementum at justo quis lobortis.
-                            </p>
-                            <h4 id="item3">Nulla ante diam</h4>
-                            <p>
-                                Nulla ante diam, elementum nec risus sed, cursus 
-                                ultricies enim. Nullam viverra aliquet tortor, sit 
-                                amet dapibus metus pellentesque ut. Sed non est et 
-                                nisl mattis varius. Mauris luctus, arcu eget interdum 
-                                eleifend, libero leo suscipit libero, quis pellentesque
-                                velit erat at sapien. Ut blandit mauris nisi, facilisis 
-                                tincidunt elit pretium vitae. Integer ac arcu gravida, 
-                                dapibus quam in, imperdiet risus. Nullam enim sem, varius
-                                non semper non, viverra eget risus. Praesent ac sapien ac
-                                turpis consequat efficitur auctor at nunc.
-                            </p>
-                            <h5 id="item3-1">Nunc venenatis est</h5>
-                            <p>Nunc venenatis est ac quam elementum, dignissim malesuada
-                                nulla tempor. Nullam leo velit, iaculis vel nulla eleifend,
-                                ultricies lobortis ipsum. Nulla interdum laoreet lacus sed 
-                                sodales. Curabitur feugiat enim tortor, in suscipit nisi
-                                eleifend ut. Ut convallis metus neque, nec imperdiet 
-                                mauris fermentum quis. Mauris ac scelerisque dolor. </p>
+                        <h5 id="item1-2">Pellentesque ut efficitur eros</h5>
+                        <p>
+                            Cras lobortis purus magna, ac porta erat elementum in.
+                            Proin a metus augue. Vestibulum metus velit, rutrum eget
+                            luctus in, tempor in erat. Vestibulum ullamcorper nunc
+                            sit amet tempor blandit. Duis eget viverra nisl. Etiam
+                            luctus tempor urna sed fringilla. Vestibulum efficitur
+                            nibh et posuere ultrices.
+                        </p>
+                        <h4 id="item2">Etiam volutpat</h4>
+                        <p>
+                            Etiam volutpat nulla lorem, vitae sollicitudin felis
+                            accumsan sit amet. Sed euismod, nisi ut feugiat auctor,
+                            dui purus egestas sem, vel interdum erat lorem sed massa.
+                            Nunc posuere aliquet lacus nec posuere. Donec ut nisi eget
+                            urna hendrerit ullamcorper et nec tellus. Curabitur porta
+                            tristique velit non varius. Vivamus magna neque, vulputate
+                            ut condimentum in, venenatis id purus. Duis sem urna, imperdiet
+                            sed nisi vitae, volutpat luctus lorem. Nunc varius posuere
+                            scelerisque. Vivamus elementum at justo quis lobortis.
+                        </p>
+                        <h4 id="item3">Nulla ante diam</h4>
+                        <p>
+                            Nulla ante diam, elementum nec risus sed, cursus
+                            ultricies enim. Nullam viverra aliquet tortor, sit
+                            amet dapibus metus pellentesque ut. Sed non est et
+                            nisl mattis varius. Mauris luctus, arcu eget interdum
+                            eleifend, libero leo suscipit libero, quis pellentesque
+                            velit erat at sapien. Ut blandit mauris nisi, facilisis
+                            tincidunt elit pretium vitae. Integer ac arcu gravida,
+                            dapibus quam in, imperdiet risus. Nullam enim sem, varius
+                            non semper non, viverra eget risus. Praesent ac sapien ac
+                            turpis consequat efficitur auctor at nunc.
+                        </p>
+                        <h5 id="item3-1">Nunc venenatis est</h5>
+                        <p>Nunc venenatis est ac quam elementum, dignissim malesuada
+                            nulla tempor. Nullam leo velit, iaculis vel nulla eleifend,
+                            ultricies lobortis ipsum. Nulla interdum laoreet lacus sed
+                            sodales. Curabitur feugiat enim tortor, in suscipit nisi
+                            eleifend ut. Ut convallis metus neque, nec imperdiet
+                            mauris fermentum quis. Mauris ac scelerisque dolor. </p>
 
-                            <h5 id="item3-2">Pellentesque ut efficitur eros</h5>
-                            <p>
-                                Cras lobortis purus magna, ac porta erat elementum in.
-                                Proin a metus augue. Vestibulum metus velit, rutrum eget
-                                luctus in, tempor in erat. Vestibulum ullamcorper nunc 
-                                sit amet tempor blandit. Duis eget viverra nisl. Etiam 
-                                luctus tempor urna sed fringilla. Vestibulum efficitur 
-                                nibh et posuere ultrices.
-                            </p>
-                            <h4 id="item4">Suspendisse eget nisi congue</h4>
-                            <p>
-                                Suspendisse eget nisi congue, convallis nisl a, blandit metus.
-                                Donec nec maximus felis, vel interdum nisl. Nulla facilisi. 
-                                Donec vulputate magna eu nunc volutpat, sit amet interdum 
-                                sapien luctus. Donec bibendum pharetra ligula a gravida. 
-                                Sed et eros sit amet sem ornare tincidunt. Proin non est 
-                                at mauris dignissim tincidunt nec quis est. Suspendisse 
-                                suscipit, velit sit amet sollicitudin aliquam, arcu massa 
-                                cursus ipsum, ac aliquet orci nisl sit amet ex. Sed a magna 
-                                lorem. Nunc congue sed dui vel convallis. Suspendisse lectus 
-                                orci, egestas non arcu eget, aliquam vehicula tellus. Pellentesque
-                                scelerisque lacinia mi, sit amet dapibus nisl dignissim et.
-                                Donec vehicula ligula ac aliquam volutpat. Fusce auctor augue 
-                                vitae orci molestie auctor.
-                            </p>
-                        </div>
+                        <h5 id="item3-2">Pellentesque ut efficitur eros</h5>
+                        <p>
+                            Cras lobortis purus magna, ac porta erat elementum in.
+                            Proin a metus augue. Vestibulum metus velit, rutrum eget
+                            luctus in, tempor in erat. Vestibulum ullamcorper nunc
+                            sit amet tempor blandit. Duis eget viverra nisl. Etiam
+                            luctus tempor urna sed fringilla. Vestibulum efficitur
+                            nibh et posuere ultrices.
+                        </p>
+                        <h4 id="item4">Suspendisse eget nisi congue</h4>
+                        <p>
+                            Suspendisse eget nisi congue, convallis nisl a, blandit metus.
+                            Donec nec maximus felis, vel interdum nisl. Nulla facilisi.
+                            Donec vulputate magna eu nunc volutpat, sit amet interdum
+                            sapien luctus. Donec bibendum pharetra ligula a gravida.
+                            Sed et eros sit amet sem ornare tincidunt. Proin non est
+                            at mauris dignissim tincidunt nec quis est. Suspendisse
+                            suscipit, velit sit amet sollicitudin aliquam, arcu massa
+                            cursus ipsum, ac aliquet orci nisl sit amet ex. Sed a magna
+                            lorem. Nunc congue sed dui vel convallis. Suspendisse lectus
+                            orci, egestas non arcu eget, aliquam vehicula tellus. Pellentesque
+                            scelerisque lacinia mi, sit amet dapibus nisl dignissim et.
+                            Donec vehicula ligula ac aliquam volutpat. Fusce auctor augue
+                            vitae orci molestie auctor.
+                        </p>
                     </div>
                 </div>
-            </div>      
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <p class="lead">
-                        Para criarmos a ancoragem basta colocar o código:<br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <p class="lead">
+                    Para criarmos a ancoragem basta colocar o código:<br>
 
-                        < a href="#ancora1" ><br/>
+                    < a href="#ancora1"><br />
 
                         Onde o #ancora1 é o id do elemento que você quer ir.
-                    </p>
-                </div>
-            <div class="col-2"></div>
+                </p>
             </div>
+            <div class="col-2"></div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

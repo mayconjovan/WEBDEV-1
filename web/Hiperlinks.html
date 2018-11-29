@@ -1,113 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Inserindo Hiperlinks</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" async="" src="./js/bootstrap.js"></script>
-        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="./cssPersonal/estilo.css"/>
-        <style>
-            body{               
-                padding-top: 200px;
+
+<head>
+    <title>Inserindo Hiperlinks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" async="" src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./cssPersonal/estilo.css" />
+    <style>
+        body {
+            padding-top: 200px;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding-top: 107px;
             }
+        }
+    </style>
 
-            @media (min-width: 768px) {
-                body {
-                    padding-top: 107px;
-                }
-            }
+</head>
 
-        </style>
+<body>
+    <!-- NAV BAR -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top">
+            <a href="./index.html" class="navbar-brand">Início</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Tabela.html" class="nav-link">Tabelas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Imagens.html" class="nav-link">Imagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Formularios.html" class="nav-link">Formulários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Aulas.html" class="nav-link">Aulas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./FormularioDD.html" class="nav-link">FormularioDD</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--Fim nav Bar-->
 
-    </head>
-    <body>
-        <!-- NAV BAR -->
-        <div class="fixed-top">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top"> 
-                <a href="./index.html" class="navbar-brand">Início</a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Tabela.html" class="nav-link">Tabelas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Imagens.html" class="nav-link">Imagens</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Formularios.html" class="nav-link">Formulários</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1 class="text-center">Hiperlinks</h1>
+            </div>
+            <div class="col-2"></div>
         </div>
-        <!-- FIM NAV BAR -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <h1 class="text-center">Hiperlinks</h1>
+        <br>
+        <div class="row">
+            <div class="col-12" style="">
+                <p class="text-justify lead">Os hiperlinks são atalhos para que o
+                    navegador nos leve a algum local especifico na web.
+                    um exemplo disso esta na pagina principal deste tutorial
+                    onde cada link daqueles nos leva a outra pagina.
+                    Um hiperlink tambem pode nos levar a imagens, downloads
+                    entre outros caminhos.</p><br>
+                <div class="text-center">
+                    <h1>Exemplo</h1>
                 </div>
-                <div class="col-2"></div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-12" style="">
-                    <p class="text-justify lead">Os hiperlinks são atalhos para que o 
-                        navegador nos leve a algum local especifico na web.
-                        um exemplo disso esta na pagina principal deste tutorial 
-                        onde cada link daqueles nos leva a outra pagina.
-                        Um hiperlink tambem pode nos levar a imagens, downloads 
-                        entre outros caminhos.</p><br>
-                    <div class="text-center">
-                        <h1>Exemplo</h1>
+                <div class="text-center">
+                    <p class="lead" style="color: #007bff">
+                        < a href="http://www.exemplo.com.br/exemplo/exemplo.html">Máscara do link< /a> </p> </div> </div>
+                                </div> <div class="row">
+                                <div class="col-12 text-center" style="font-size: 500%">
+                                    <h2>Passe o mouse em cima da palavra google ou click!</h2>
+                                </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center" style="font-size: 500%">
+                        <a href="http://www.google.com.br/">Google!</a>
                     </div>
-                    <div class="text-center">
-                        <p class="lead" style="color: #007bff">< a  href="http://www.exemplo.com.br/exemplo/exemplo.html">Máscara do link< /a></p>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10 text-center" style="font-size: 500%">
+                        <h2>Também podemos mascarar links com imagens. Ficando desta forma</h2>
+                        <a href="http://www.google.com.br/"><img src="image/google.jpg" style="width: 80%"></a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10 text-center">
+                        <h2>E para que isso aconteça devemos utilizar o seguinte código</h2>
+                        <p class="lead">
+                            < a href="http://www.google.com.br/">
+                                < img src="image/google.jpg">
+                                    < /a> </p> </div> <div class="col-1">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 text-center" style="font-size: 500%">
-                    <h2>Passe o mouse em cima da palavra google ou click!</h2>
-                </div>
-            </div>   
-            <div class="row">
-                <div class="col-12 text-center" style="font-size: 500%">
-                    <a href="http://www.google.com.br/">Google!</a>
-                </div>
+</body>
 
-            </div>       
-
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10 text-center" style="font-size: 500%">
-                    <h2>Também podemos mascarar links com imagens. Ficando desta forma</h2>
-                    <a href="http://www.google.com.br/"><img src="image/google.jpg" style="width: 80%"></a>
-                </div>
-                <div class="col-1"></div>  
-            </div>
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col-10 text-center">
-                    <h2>E para que isso aconteça devemos utilizar o seguinte código</h2>
-                    <p class="lead">< a href="http://www.google.com.br/">< img src="image/google.jpg"> < /a></p>
-                </div>
-                <div class="col-1"></div>  
-            </div>       
-        </div>
-    </body>
 </html>

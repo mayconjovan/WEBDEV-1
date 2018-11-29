@@ -1,180 +1,202 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Criando Tabelas</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <style>
-            body{               
-                padding-top: 200px;
+
+<head>
+    <title>Criando Tabelas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 200px;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding-top: 107px;
             }
+        }
+    </style>
 
-            @media (min-width: 768px) {
-                body {
-                    padding-top: 107px;
-                }
-            }
+</head>
 
-        </style>
-
-    </head>
-    <body>
-        <!-- NAV BAR -->
-        <div class="fixed-top">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top"> 
-                <a href="./index.html" class="navbar-brand">Início</a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Tabela.html" class="nav-link">Tabelas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Imagens.html" class="nav-link">Imagens</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./Formularios.html" class="nav-link">Formulários</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+<body>
+    <!-- NAV BAR -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-fixed-top">
+            <a href="./index.html" class="navbar-brand">Início</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./Hiperlinks.html" class="nav-link">Hiperlinks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Cabecalhos.html" class="nav-link">Cabeçalhos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Ancoragem.html" class="nav-link">Ancoragem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Tabela.html" class="nav-link">Tabelas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Imagens.html" class="nav-link">Imagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Formularios.html" class="nav-link">Formulários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Aulas.html" class="nav-link">Aulas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./FormularioDD.html" class="nav-link">FormularioDD</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--Fim nav Bar-->
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1 class="text-center my-2">Tabelas</h1>
+            </div>
+            <div class="col-2"></div>
         </div>
-        <!-- FIM NAV BAR -->
-        <div class="container">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <h1 class="text-center my-2">Tabelas</h1>
-                </div>
-                <div class="col-2"></div>
-            </div>
-            <div class="row">
+        <div class="row">
 
-                <div class="col-2"></div>
-                <div class="col-8 my-3">
-                    <h4 class="text-center lead">
-                        Passo-a-passo como criar uma tabela na página.
-                    </h4>
-                </div>
-                <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-8 my-3">
+                <h4 class="text-center lead">
+                    Passo-a-passo como criar uma tabela na página.
+                </h4>
             </div>
-
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8 my-4">
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="text-center col-8">
-                            <h2> Tabela de Tags</h2>                                
-                        </div>
-                        <div class="col-2"></div>
-                    </div>
-                </div>
-                <div class="col-2"></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-8">
-                    <!--Inicio da Tabela de Tags-->                    
-                    <table border="2" >
-                        <th>TAG</th>
-                        <th>Função</th>
-                        <tr>
-                            <td>< table ></td>
-                            <td>Define que será desenhado uma tabela</td>
-                        </tr>
-                        <tr>
-                            <td>< th ></td>
-                            <td>Define nome para uma coluna</td>
-                        </tr>
-                        <tr>
-                            <td>< tr ></td>
-                            <td>Define o desenho da tabela</td>
-                        </tr>
-                        <tr>
-                            <td>< td ></td>
-                            <td>Define o conteudo daquela célula</td> 
-                        </tr>
-                        <tr>
-                            <td>< /"tag" ></td>
-                            <td>O sinal < / Fecha a tag desejada</td>
-                        </tr>
-                        <tr>
-                            <td>border</td>
-                            <td>Dentro da tag < table border="1"> define as bordas da tabela</td>
-                        </tr>
-                        <tr>
-                            <td>< table disabled ></td>
-                            <td>Disabled, desativa a caixa de de texto para q não modifiquem.</td>
-                        </tr>
-                        <tr>
-                            <td>< td colspam="2" ></td>
-                            <td>Define o numero (2) de colunas que farão a junção. </td>
-                        </tr>
-                        <tr>
-                            <td>< td rowspam="2" ></td>
-                            <td>Define o numero (2) de linhas que farão a junção.</tr>
-                    </table> 
-                </div>
-                <div class="col-1"></div>
-            </div>
-            <!--Fim da Tabela de Tags-->
-
+            <div class="col-2"></div>
         </div>
 
-        <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 my-4">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="text-center col-8">
+                        <h2> Tabela de Tags</h2>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-8">
+                <!--Inicio da Tabela de Tags-->
+                <table border="2">
+                    <th>TAG</th>
+                    <th>Função</th>
+                    <tr>
+                        <td>
+                            < table>
+                        </td>
+                        <td>Define que será desenhado uma tabela</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            < th>
+                        </td>
+                        <td>Define nome para uma coluna</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            < tr>
+                        </td>
+                        <td>Define o desenho da tabela</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            < td>
+                        </td>
+                        <td>Define o conteudo daquela célula</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            < /"tag">
+                        </td>
+                        <td>O sinal < / Fecha a tag desejada</td> </tr> <tr>
+                        <td>border</td>
+                        <td>Dentro da tag < table border="1"> define as bordas da tabela</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            < table disabled>
+                        </td>
+                        <td>Disabled, desativa a caixa de de texto para q não modifiquem.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            < td colspam="2">
+                        </td>
+                        <td>Define o numero (2) de colunas que farão a junção. </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            < td rowspam="2">
+                        </td>
+                        <td>Define o numero (2) de linhas que farão a junção.
+                    </tr>
+                </table>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <!--Fim da Tabela de Tags-->
 
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8 my-4">
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="text-center col-8">
-                            <h2>Tabela com Bordas</h2>                                
-                        </div>
-                        <div class="col-2"></div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 my-4">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="text-center col-8">
+                        <h2>Tabela com Bordas</h2>
                     </div>
-                    <div class="row my-4">            
-                        <div class="text-center col-12" >
-                            <table border="1" align="center">
-                                <th>Coluna 1</th>
-                                <th>Coluna 2</th>
-                                <tr>
-                                    <td>Linha 1, Célula 1</td>
-                                    <td>Linha 2, Celula 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Linha 1, Célula 2</td>
-                                    <td>Linha 2, Célula 2</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>             
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="text-center col-8">
-                            <h2>Código da tabela</h2>                                
-                        </div>
-                        <div class="col-2"></div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row my-4">
+                    <div class="text-center col-12">
+                        <table border="1" align="center">
+                            <th>Coluna 1</th>
+                            <th>Coluna 2</th>
+                            <tr>
+                                <td>Linha 1, Célula 1</td>
+                                <td>Linha 2, Celula 1</td>
+                            </tr>
+                            <tr>
+                                <td>Linha 1, Célula 2</td>
+                                <td>Linha 2, Célula 2</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="row my-4">            
-                        <div class="text-center col-12" >
-                            <textarea  rows="14" cols="60">        
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="text-center col-8">
+                        <h2>Código da tabela</h2>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row my-4">
+                    <div class="text-center col-12">
+                        <textarea rows="14" cols="60">
                             <table border="1">
                                 <th>Coluna 1</th>
                                     <th>Coluna 2</th>
@@ -188,41 +210,41 @@
                                     </tr>
                                 </table>
                             </textarea>
-                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="text-center col-8">
-                            <h2>Tabela sem bordas</h2>                                
-                        </div>
-                        <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="text-center col-8">
+                        <h2>Tabela sem bordas</h2>
                     </div>
-                    <div class="row my-4">            
-                        <div class="text-center col-12" >
-                            <table align="center">
-                                <th>Coluna 1</th>
-                                <th>Coluna 2</th>
-                                <tr>
-                                    <td>Linha 1, Célula 1</td>
-                                    <td>Linha 2, Celula 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Linha 1, Célula 2</td>
-                                    <td>Linha 2, Célula 2</td>
-                                </tr>
-                            </table>
-                        </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row my-4">
+                    <div class="text-center col-12">
+                        <table align="center">
+                            <th>Coluna 1</th>
+                            <th>Coluna 2</th>
+                            <tr>
+                                <td>Linha 1, Célula 1</td>
+                                <td>Linha 2, Celula 1</td>
+                            </tr>
+                            <tr>
+                                <td>Linha 1, Célula 2</td>
+                                <td>Linha 2, Célula 2</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="text-center col-8">
-                            <h2>Código da tabela</h2>                                
-                        </div>
-                        <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="text-center col-8">
+                        <h2>Código da tabela</h2>
                     </div>
-                    <div class="row my-4">            
-                        <div class="text-center col-12" >
-                            <textarea  rows="14" cols="80">
+                    <div class="col-2"></div>
+                </div>
+                <div class="row my-4">
+                    <div class="text-center col-12">
+                        <textarea rows="14" cols="80">
                         NOTA: Apenas foi removido o border="1" de dentro da tag.
                             <table>                            
                                 <th>Coluna 1</th>
@@ -237,40 +259,40 @@
                                     </tr>
                             </table>
                             </textarea>
-                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="text-center col-8">
-                            <h2>Tabela com célula vazia</h2>                                
-                        </div>
-                        <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="text-center col-8">
+                        <h2>Tabela com célula vazia</h2>
                     </div>
-                    <div class="row my-4">            
-                        <div class="text-center col-12" >
-                            <table border="1" align="center">
-                                <th>Coluna 1</th>
-                                <th>Coluna 2</th>
-                                <tr>
-                                    <td>Linha 1, Célula 1</td>
-                                    <td>Linha 2, Celula 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Linha 1, Célula 2</td>
-                                </tr>
-                            </table> 
-                        </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row my-4">
+                    <div class="text-center col-12">
+                        <table border="1" align="center">
+                            <th>Coluna 1</th>
+                            <th>Coluna 2</th>
+                            <tr>
+                                <td>Linha 1, Célula 1</td>
+                                <td>Linha 2, Celula 1</td>
+                            </tr>
+                            <tr>
+                                <td>Linha 1, Célula 2</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="text-center col-8">
-                            <h2>Código da tabela</h2>                                
-                        </div>
-                        <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="text-center col-8">
+                        <h2>Código da tabela</h2>
                     </div>
-                    <div class="row my-4">            
-                        <div class="text-center col-12" >                           
-                            <textarea  rows="13" cols="80" >
+                    <div class="col-2"></div>
+                </div>
+                <div class="row my-4">
+                    <div class="text-center col-12">
+                        <textarea rows="13" cols="80">
                                 <table border="1">
                                     <th>Coluna 1</th>
                                     <th>Coluna 2</th>
@@ -284,40 +306,40 @@
                                         </tr>
                                 </table>        
                             </textarea>
-                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="text-center col-8">
-                            <h2>Tabela com célula vazia</h2>                                
-                        </div>
-                        <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="text-center col-8">
+                        <h2>Tabela com célula vazia</h2>
                     </div>
-                    <div class="row my-4">            
-                        <div class="text-center col-12" >
-                            <table border="1" align="center">
-                                <th>Coluna 1</th>
-                                <th>Coluna 2</th>
-                                <tr>
-                                    <td>Linha 1, Célula 1</td>
-                                    <td>Linha 2, Celula 1</td>
-                                </tr>
-                                <tr>
-                                    <td align="middle" colspan="2">Linha 1, Célula 2</td>
-                                </tr>
-                            </table>
-                        </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row my-4">
+                    <div class="text-center col-12">
+                        <table border="1" align="center">
+                            <th>Coluna 1</th>
+                            <th>Coluna 2</th>
+                            <tr>
+                                <td>Linha 1, Célula 1</td>
+                                <td>Linha 2, Celula 1</td>
+                            </tr>
+                            <tr>
+                                <td align="middle" colspan="2">Linha 1, Célula 2</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="text-center col-8">
-                            <h2>Código da tabela</h2>                                
-                        </div>
-                        <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="text-center col-8">
+                        <h2>Código da tabela</h2>
                     </div>
-                    <div class="row my-4">            
-                        <div class="text-center col-12" >                           
-                            <textarea  rows="13" cols="90" >   
+                    <div class="col-2"></div>
+                </div>
+                <div class="row my-4">
+                    <div class="text-center col-12">
+                        <textarea rows="13" cols="90">
                                 <table border="1">
                                     <th>Coluna 1</th>
                                     <th>Coluna 2</th>
@@ -330,41 +352,41 @@
                                         </tr>
                                 </table>
                             </textarea>
-                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="text-center col-8">
-                            <h2>Junção de Linha</h2>                                
-                        </div>
-                        <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="text-center col-8">
+                        <h2>Junção de Linha</h2>
                     </div>
-                    <div class="row my-4">            
-                        <div class="text-center col-12" >
-                            <table border="1" align="center">                   
+                    <div class="col-2"></div>
+                </div>
+                <div class="row my-4">
+                    <div class="text-center col-12">
+                        <table border="1" align="center">
 
-                                <th>Coluna 1</th>
-                                <th>Coluna 2</th>
-                                <tr>
-                                    <td>Linha 1, Célula 1</td>
-                                    <td rowspan="2">Linha 2, Coluna 2</td>
-                                </tr>
-                                <tr>
-                                    <td>Linha 1, Célula 2</td>
-                                </tr>
-                            </table>
-                        </div>
+                            <th>Coluna 1</th>
+                            <th>Coluna 2</th>
+                            <tr>
+                                <td>Linha 1, Célula 1</td>
+                                <td rowspan="2">Linha 2, Coluna 2</td>
+                            </tr>
+                            <tr>
+                                <td>Linha 1, Célula 2</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="text-center col-8">
-                            <h2>Código da tabela</h2>                                
-                        </div>
-                        <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="text-center col-8">
+                        <h2>Código da tabela</h2>
                     </div>
-                    <div class="row my-4">            
-                        <div class="text-center col-12" >                           
-                            <textarea  rows="13" cols="90" >                     
+                    <div class="col-2"></div>
+                </div>
+                <div class="row my-4">
+                    <div class="text-center col-12">
+                        <textarea rows="13" cols="90">
                             <table border="1">
                                 <th>Coluna 1</th>
                                 <th>Coluna 2</th>
@@ -377,11 +399,12 @@
                                 </tr>
                             </table>
                             </textarea>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </body>
+</body>
+
 </html>
