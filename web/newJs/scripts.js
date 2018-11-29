@@ -77,7 +77,7 @@ function novaRadio() {
                      `);
       id++;
       d1.insertAdjacentHTML('beforeend',
-         `<div ><input type="text" id="${id}" value=" Radio ${radio}"></div>
+         `<div ><input type="text" style="width: 90%" id="${id}" value=" Radio ${radio}"></div>
                      `);
       id++;
       radio++;
