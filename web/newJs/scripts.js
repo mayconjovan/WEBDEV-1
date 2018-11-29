@@ -23,7 +23,7 @@ function novaPergunta() {
       var db = document.getElementById('opc');
 
       d1.insertAdjacentHTML('beforeend',
-         `<textarea placeholder="Digite sua pergunta... " id="${id}" class="novaPergunta"></textarea>`
+         `<textarea placeholder="Digite sua pergunta... " id="${id}" maxlength="400" class="novaPergunta" oninput='if(this.scrollHeight > this.offsetHeight) this.rows += 1' rows="1"></textarea>`
       )
 
       id++;
@@ -38,7 +38,7 @@ function novaRespostaTexto() {
    } else {
       var d1 = document.getElementById('drop1');
       d1.insertAdjacentHTML('beforeend',
-         `<div class="txt" maxlength ="500"><textarea id="${id}" class="novaResposta"></textarea> `);
+         `<div class="txt"><textarea id="${id}" maxlength="500" class="novaResposta" oninput='if(this.scrollHeight > this.offsetHeight) this.rows += 1' rows="1" placeholder="Digite a resposta aqui"></textarea> `);
 
       id++;
       opcao++;
@@ -123,8 +123,7 @@ function salvarPagina() {
    localStorage.setItem("html", refVal);
    for (var i = 0; i < id; i++) {
       var x = document.getElementById(i).value;
-      var y = document.getElementById(i).getAttribute("value");
-      console.log(x);
+      var y = document.getElementById(i).getAttribute("value");      
 
       localStorage.setItem(i, x);
    }
@@ -167,3 +166,12 @@ function retornaDados() {
 
    localStorage.clear();
 }
+
+function autoResize()
+    {
+        objTextArea = document.getElementsByTagName('textarea');
+        while (objTextArea.scrollHeight > objTextArea.offsetHeight)
+        {
+            objTextArea.rows += 1;
+        }
+    }

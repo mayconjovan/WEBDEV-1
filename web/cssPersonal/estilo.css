@@ -16,7 +16,7 @@ body {
 }
 
 #tituloform{
-    font-size: 16pt;   
+    font-size: 18pt;   
 }
 
 textarea {
@@ -24,7 +24,8 @@ textarea {
     border: none;
     resize: none;
     height: auto;
-    display: flex;           
+    display: flex;
+    outline: none;        
 }
 
 #drop1 {
@@ -64,6 +65,8 @@ hr {
 
 #tituloform {
    color: rgb(103, 58, 183);
+   font-weight: bold;
+   font-size: 20pt;
 }
 
 #paleta {
@@ -96,9 +99,10 @@ hr {
 }
 
 .novaPergunta {
-    font-size: 18pt;
+    font-size: 16pt;
     font-style: italic;
-    color: rgb(103, 58, 183);
+    color: rgb(0, 0, 0);
+    font-weight: bold;    
 }
 
 .novaResposta {
